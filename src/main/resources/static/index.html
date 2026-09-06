@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Semester Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <h1>VIT Semester Result</h1>
+
+    <div class="form-card">
+        <div class="student-info">
+            <input type="text" id="studentName" placeholder="Student Name" />
+            <input type="text" id="regNumber" placeholder="Registration Number" />
+        </div>
+
+        <table class="result-table">
+            <thead>
+            <tr>
+                <th>Code</th>
+                <th>Subject</th>
+                <th>MSE (/50)</th>
+                <th>ESE (/100)</th>
+            </tr>
+            </thead>
+            <tbody id="subjectRows"></tbody>
+        </table>
+
+        <button id="submitBtn">Calculate & Save Result</button>
+    </div>
+
+    <div id="resultSummary" class="result-summary hidden"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
